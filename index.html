@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#090910"><title>Anime World</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand"><span class="mark">A</span><span>ANIME<span class="accent">WORLD</span></span></div><button class="lang" id="langBtn">हिंदी / EN</button></header>
+<section class="hero"><div class="tag" id="heroTag">✦ YOUR ANIME UNIVERSE</div><h1 id="heroTitle">Enter the<br><span>Anime World.</span></h1><p id="heroDesc">Unlimited adventures. Legendary battles. Your next obsession starts here.</p><button class="primary" id="exploreBtn" onclick="showNotice()">Explore Anime <b>→</b></button><div class="hero-glow"></div></section>
+<nav><button class="active" data-filter="All" data-en="For You" data-hi="आपके लिए">For You</button><button data-filter="Action" data-en="Action" data-hi="एक्शन">Action</button><button data-filter="Adventure" data-en="Adventure" data-hi="एडवेंचर">Adventure</button><button data-filter="Fantasy" data-en="Fantasy" data-hi="फैंटेसी">Fantasy</button></nav>
+<section class="section"><div class="heading"><div><small id="trendLabel">HANDPICKED FOR YOU</small><h2 id="trendTitle">Trending Anime</h2></div><span class="see">VIEW ALL</span></div><div class="grid" id="animeGrid"></div></section>
+<section class="section"><div class="heading"><div><small id="playerLabel">CONTINUE YOUR JOURNEY</small><h2 id="playerTitle">Watch with your links</h2></div></div><div class="linkbox"><p id="playerHelp">Add your own video URL to play an episode.</p><input id="videoUrl" placeholder="Paste your video URL (MP4 link)"><button class="primary full" id="playBtn" onclick="playCustom()">Play video</button></div><video id="player" controls playsinline></video></section>
+<footer>ANIME<span class="accent">WORLD</span><small>Made for anime fans • 2026</small></footer>
+<div id="modal" class="modal" onclick="this.classList.remove('show')"><div class="modalbox" onclick="event.stopPropagation()"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="app.js"></script></body></html>
